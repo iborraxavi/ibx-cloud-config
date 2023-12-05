@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ibx-cloud-account
+  data:
+    mongodb:
+      host: 89.117.61.23
+      port: 27017
+      database: ibx-account
+      username: admin
+      password: admin
+
+server:
+  port: 8090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://89.117.61.23:8761/eureka/
