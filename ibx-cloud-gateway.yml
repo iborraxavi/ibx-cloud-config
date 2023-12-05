@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ibx-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: ibx-cloud-account
+          uri: lb://ibx-cloud-account
+          predicates:
+            - path: **/account/**
+
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://89.117.61.23:8761/eureka/
