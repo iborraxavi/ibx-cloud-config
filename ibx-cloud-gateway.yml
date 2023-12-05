@@ -7,7 +7,7 @@ spring:
         - id: ibx-cloud-account
           uri: lb://ibx-cloud-account
           predicates:
-            - Path=/ibx/*/account/**
+            - Path=/ibx/*/user/**
 
 
 server:
