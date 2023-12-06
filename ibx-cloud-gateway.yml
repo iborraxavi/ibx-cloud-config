@@ -16,7 +16,7 @@ spring:
         registration:
           keycloak:
             client-id: client1
-            client-secret: rzHOqpUAmCowMWeLIYes1lOfz5MY9gWd
+            client-secret: T7OI3uwvK6AHHPNobZL8YSGUXvbZwU2J
             scope: openid,profile,email
             authorization-grant-type: authorization_code
             provider: keycloak
