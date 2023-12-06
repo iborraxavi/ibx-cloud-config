@@ -22,7 +22,7 @@ spring:
             provider: keycloak
         provider:
           keycloak:
-            issuer-uri: http://localhost:8090/realms/realm1
+            issuer-uri: http://localhost:8081/realms/realm1
 
 
 
