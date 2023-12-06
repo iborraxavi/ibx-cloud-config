@@ -3,11 +3,27 @@ spring:
     name: ibx-cloud-gateway
   cloud:
     gateway:
+      default-filters:
+        - TokenRelay
       routes:
         - id: ibx-cloud-account
           uri: lb://ibx-cloud-account
           predicates:
             - Path=/ibx/*/user/**
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: client1
+            client-secret: rzHOqpUAmCowMWeLIYes1lOfz5MY9gWd
+            scope: openid,profile,email
+            authorization-grant-type: authorization_code
+            provider: keycloak
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8090/realms/realm1
+
 
 
 server:
