@@ -3,7 +3,12 @@ spring:
     name: ibx-cloud-account
   data:
     mongodb:
-      uri: mongodb://admin:admin@localhost:27017/ibx-account
+      host: 127.0.0.1
+      port: 27017
+      database: ibx-account
+      authentication-database: admin
+      username: mongoadmin
+      password: mongoadmin
 
 server:
   port: 8090
