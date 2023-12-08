@@ -12,8 +12,8 @@ spring:
       username: mongoadmin
       password: mongoadmin
   kafka:
-    bootstrap-servers: localhost:9092
-    producer:  
+    producer:
+      bootstrap-servers: localhost:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       acks: all
