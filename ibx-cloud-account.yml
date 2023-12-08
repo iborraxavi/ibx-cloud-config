@@ -1,6 +1,8 @@
 spring:
   application:
     name: ibx-cloud-account
+  webflux:
+    base-path: /
   data:
     mongodb:
       host: 127.0.0.1
