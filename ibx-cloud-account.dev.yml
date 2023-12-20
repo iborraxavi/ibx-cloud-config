@@ -10,7 +10,7 @@ spring:
       password: admin
 
 server:
-  port: 8090
+  port: 9100
 
 eureka:
   client:
