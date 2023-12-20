@@ -3,6 +3,8 @@ spring:
     name: ibx-cloud-gateway
   cloud:
     gateway:
+      default-filters:
+        - TokenRelay
       routes:
         - id: ibx-cloud-account
           uri: lb://ibx-cloud-account

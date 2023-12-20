@@ -9,7 +9,7 @@ spring:
         - id: ibx-cloud-account
           uri: lb://ibx-cloud-account
           predicates:
-            - Path=/ibx/*/user/**
+            - Path=/account/*/user/**
   security:
     oauth2:
       client:
