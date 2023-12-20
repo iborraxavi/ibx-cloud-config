@@ -9,8 +9,20 @@ spring:
         - id: ibx-cloud-account
           uri: lb://ibx-cloud-account
           predicates:
-            - Path=/ibx/*/user/**
-
+            - Path=/ibx/*/account/**
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: client1
+            client-secret: T7OI3uwvK6AHHPNobZL8YSGUXvbZwU2J
+            scope: openid,profile,email
+            authorization-grant-type: authorization_code
+            provider: keycloak
+        provider:
+          keycloak:
+            issuer-uri: http://host.docker.internal:8081/realms/realm1
 
 server:
   port: 8080
